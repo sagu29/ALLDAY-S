@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLDAY'S</title>
+    <style>
+        .nam{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #naru{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        #nari{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+        }
+        #nav2{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+            width: 90%;
+            height: 100px;
+        }
+        #input{
+            text-align: right;
+            margin-right: 700px;
+            height: 30px;
+            align-items: center;
+
+        }
+        #p1{
+            text-align: right;
+            
+        }
+        #nav1{
+            margin-left: 70%;
+            width: 30%;
+            text-align: right;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        #nav5{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            margin-left: 20%;
+        }
+        .nav3{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        a{
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .nam{
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        h1{
+            margin-bottom: 30px;
+        }
+        img{
+            width: 100%;
+        }
+        #foot1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 30px;
+            background-color: rgb(236, 234, 234);
+            width: 90%;
+            padding-left: 175px;
+        }
+        a{
+            display: block;
+        }
+        #im{
+            height: 30px;
+            margin-left: 200px;
+        }
+        #foot1 a{
+            margin-top: 30px;
+        }
+        #foot2{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 70px;
+        }
+        #foot2 p{
+            display: block
+        }
+        #foot2 a{
+            font-size: 15px;
+        }
+        #foot3{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 30px;
+        }
+        #foot3 a{
+            font-size: 15px;
+        }
+        #foot4{
+            text-align: center;
+            font-size: 15px;
+            margin-top: 30px;
+
+        }
+        form input {
+            width: 30%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid rgb(242, 237, 237);
+            outline: none;
+            margin-top: 25px;
+            height: 20px;
+            display: flex;
+        }
+
+        input[type="submit"] {
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            background-color: rgb(23, 148, 250);
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 100%;
+            margin-left: 120px;
+            text-align: center;
+            width: 70%;
+            padding-left: 150px;
+        }
+        #inp{
+            text-align: right;
+            height: 30px;
+            align-items: center;
+            margin-left: 750px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <p id="p1">stores & events</p>
+        <p id="p1">shopping services</p>
+        <div id="nav5">
+            <img src="https://assets.bloomingdales.com/feature/header-bcom/latest/images/flags/IN.png" alt="error">
+            <p>INR</p>
+        </div>
+    </div>
+    <div id="nav2">
+        <img src="./Logo2.png" alt="error">
+        <input id="inp" type="text">
+        <img id="im" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMS4wOCIgaGVpZ2h0PSIyNi4zNSIgdmlld0JveD0iMCAwIDIxLjA4IDI2LjM1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZDJhZDgxO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwLjMyNywyNi4zNUguNzUzQS44LjgsMCwwLDEsMCwyNS42VjcuMjc3YS44LjgsMCwwLDEsLjc1My0uNzUySDUuNFY1LjI3QTUuMzMsNS4zMywwLDAsMSw2LjkxNywxLjU1Myw0LjkzNCw0LjkzNCwwLDAsMSwxMC40MTUsMGguMTI1YTUuMjU4LDUuMjU4LDAsMCwxLDUuMDE5LDUuMjdWNi41MjVoNC43NjhhLjgxNS44MTUsMCwwLDEsLjc1Mi43NTJWMjUuNmEuOTU0Ljk1NCwwLDAsMS0uMjUxLjVsMCwwQS42NTEuNjUxLDAsMCwxLDIwLjMyNywyNi4zNVpNMTAuNTQsMS42MzFBMy4zMDksMy4zMDksMCwwLDAsNy40LDMuNjM5YTQuMyw0LjMsMCwwLDAtLjM3NywyLjEzM3YuNzUzaDcuMDI3VjUuNzcyYTQuOCw0LjgsMCwwLDAtLjM3Ni0yLjI1OCwzLjY1NywzLjY1NywwLDAsMC0zLjAxMS0xLjg4M1oiLz48L3N2Zz4=" alt="error">
+    </div>
+    <div class="sign-form">
+        <form>
+
+            <h2>Sign in</h2>
+
+            <p>Sign in to access your Orders, Offers and Wishlist.</p>
+            <input id="email" type="email" placeholder="Enter Email" />
+            <input id="phone" type="number" placeholder="Enter your mobile no" />
+
+        </form>
+
+    </div>
+    <div class="nav3">
+        <a href="">WOMEN</a>
+        <a href="">SHOES</a>
+        <a href="">HANDBAG</a>
+        <a href="">JWELLERY & ACCESORIES</a>
+        <a href="">MEN</a>
+        <a href="">KIDS</a>
+        <a href="">HOME</a>
+        <a href="">SALE</a>
+        <a href="">DESIGNERS</a>
+        <a href="">EDITORIAL</a>
+        <a href="">GIFTS</a>
+    </div>
+    <div>
+
+        <img src="https://images.bloomingdalesassets.com/is/image/BcomMedia/media/0223_0227_D_01b_SALE_BMSM_INTL.jpg?scl=1&fmt=webp&wid=1440" alt="error">
+        <img src="https://images.bloomingdalesassets.com/is/image/BcomMedia/media/0223_0227_D_02_CAR_a_MULTI_FemaleFounders.jpg?scl=1&fmt=webp&wid=1440" alt="error">
+    </div>
+    <div class="nam">
+        <img src="https://images.bloomingdalesassets.com/is/image/BcomMedia/media/0215_D_02a_TB_RTW_ALC.jpg?scl=1&fmt=webp&wid=720" alt="error">
+        <img src="https://images.bloomingdalesassets.com/is/image/BcomMedia/media/0215_D_02b_TB_MULTI_RagNBone.jpg?scl=1&fmt=webp&wid=720" alt="error">
+    </div>
+    <div>
+        <h1>BLACK OWNED AND FOUNDED BRANDS</h1>
+    <div id="naru">
+        <div>
+            <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/12522871_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+            <h6>EleVen by Venus Williams</h6>
+            <h4>Now INR 4,664.00 - INR 7,056.00</h4>
+        </div>
+        <div>
+            <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/12608733_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+            <h6>Andrea lyamah</h6>
+            <h4>INR 9,611.00</h4>
+        </div>
+        <div>
+            <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/12608611_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+            <h6>Andrea lyamah</h6>
+            <h4>INR 23,083.00 - INR 26,483.00</h4>
+        </div>
+        <div>
+            <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/12406798_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="erro">
+            <h6>EleVen by Venus Williams</h6>
+            <h4>Now INR 5,262.00 - INR 7,056.00</h4>
+        </div>
+        <div>
+            <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/12442684_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+            <h6>YAURA</h6>
+            <h4>Now INR 9,828.00</h4>
+        </div>
+        <div>
+            <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/11825273_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="erro">
+            <h6>Jessica Rich</h6>
+            <h4>INR 21,357.00 - INR 23,493.00</h4>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div>
+            <img src="https://images.bloomingdalesassets.com/is/image/BcomMedia/media/0215_D_05_MULTI_Essentials.jpg?scl=1&fmt=webp&wid=1440" alt="error">
+        </div>
+    </div>
+    <div>
+        <h1>BEST SELLERS</h1>
+    <div id="nari">
+       <div>
+        <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/12399689_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+        <h6>Canada Goose</h6>
+        <h4>INR 110,629.00</h4>
+       </div>
+       <div>
+        <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/11122393_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+        <h6>Cardinal Of Canada</h6>
+        <h4>INR 55,101.00</h4>
+       </div>
+       <div>
+        <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/12399674_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="arror">
+        <h6>Canada Goose</h6>
+        <h4>INR 110,629.00</h4>
+       </div>
+       <div>
+        <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/12512207_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+        <h6>Canada Goose</h6>
+        <h4>INR 106,785.00</h4>
+       </div>
+       <div>
+        <img src="https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/10476935_fpx.tif?op_sharpen=1&wid=240&hei=300&fit=fit,1&qlt=50&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg" alt="error">
+        <h6>The Men's Store at Bloomingdale's</h6>
+        <h4>INR 19,478.00</h4>
+       </div>
+    </div>
+       <div>
+        <img src="" alt="">
+       </div>
+    </div>
+    <div id="foot1">
+        <div>
+            <h4>CUSTOMER SERVICE</h4>
+            <a href="">1-800-777-0000</a>
+            <a href="">FAQ & Help</a>
+            <a href="">Visitor Services</a>
+            <a href="">Domestic site FAQS</a>
+            <a href="">Shipping to india go to U.S. site</a>
+        </div>
+        <div>
+            <h4>YOUR ORDER</h4>
+            <a href="">Order Status & History</a>
+            <a href="">Shiping Policy</a>
+            <a href="">Return & Exchange</a>
+        </div>
+        <div >
+            <h4>ABOUT ALLDAY'S</h4>
+            <a href="">About Us</a>
+            <a href="">be the change</a>
+            <a href="">Careers</a>
+        </div>
+        <div>
+            <h4>FOLLOW US</h4>
+        </div>
+    </div>
+    <div>
+        <div id="foot2">
+            <a href="">Terms of Use</a>
+            <p>|</p>
+            <a href="">Privacy</a>
+            <p>|</p>
+            <a href="">Do Not Sell or Share My Personal Information</a>
+            <p>|</p>
+            <a href="">CA Privacy Rights</a>
+        </div>
+        <div id="foot3">
+            <a href="">CA Transparency in Supply Chains Act</a>
+            <p>|</p>
+            <a href="">Interest Based Ads</a>
+            <p>|</p>
+            <a href="">Customer Bill of Rights</a>
+            <p>|</p>
+            <a href="">Product Recalls</a>
+            <p>|</p>
+            <a href="">Essential Accessibility</a>
+        </div>
+        <div id="foot4">
+            <p>© 2023 Bloomingdale's. 1000 Third Avenue New York, NY 10022. Request our corporate name and address.</p>
+        </div>
+        <div id="foot4">
+            <p>Like No Other Store in the World</p>
+        </div>
+    </div>
+</body>
+</html>
