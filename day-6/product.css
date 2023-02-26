@@ -1,0 +1,31 @@
+#container{
+    width: 100%;    
+}
+
+#box{
+    width: 80%;
+    margin: auto;
+}
+#box{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align: center;
+    gap: 30px;
+}
+#box img{
+}
+    /* width: 100%; */
+    .indiv{
+        /* background-color: blue; */
+        /* display: none; */
+        width: 80%;
+        height: 400px;
+        margin: auto;
+    }
+    .indiv img{
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+    }
+/* #box  */

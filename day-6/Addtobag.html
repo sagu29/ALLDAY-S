@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag</title>
+    <link rel="stylesheet" href="./product.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .nam{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #naru{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        #nari{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+        }
+        #nav2{
+            display: flex;
+            justify-content: space-between;
+            /* margin-right: 20px;
+            width: 90%;
+            height: 100px; */
+        }
+        #serachbar{
+            display: flex;
+            /* justify-content: flex-start */
+            align-items: center;
+
+        }
+        #im{
+            height: 50px;
+            margin-left: -120px;
+            /* margin-left:-100px; */
+            /* border: 1px solid #000; */
+        }
+        #inp{
+            width: 700px;
+            height: 50px;
+            /* width: 200px; */
+            /* margin-left: px; */
+        }
+
+        /* #input{
+            text-align: right;
+            margin-right: 700px;
+            height: 30px;
+            align-items: center;
+
+        } */
+        #p1{
+            text-align: right;
+            
+        }
+        #nav1{
+            margin-left: 70%;
+            width: 30%;
+            text-align: right;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        #nav5{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            margin-left: 20%;
+        }
+        .nav3{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        a{
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .nam{
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        h1{
+            margin-bottom: 30px;
+        }
+        img{
+            width: 100%;
+        }
+        #foot1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 30px;
+            background-color: rgb(236, 234, 234);
+            width: 90%;
+            padding-left: 175px;
+        }
+        a{
+            display: block;
+        }
+        #box{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #anchor{
+            width: 500px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            align-items: center;
+            /* margin-left: 700px; */
+            margin-top: 50px;
+        }
+        #price{
+            font-size: 50px;
+        }
+        #quantity{
+            font-size: 50px;
+        }
+        #dog{
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            /* display: flex; */
+             width: 20%;
+            margin: auto; 
+        }
+        h1{
+            margin-left: 100px;
+        }
+        #nav2{
+            margin-left: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <p id="p1">stores & events</p>
+        <p id="p1">shopping services</p>
+        <div id="nav5">
+            <img src="https://assets.bloomingdales.com/feature/header-bcom/latest/images/flags/IN.png" alt="error">
+            <p>INR</p>
+        </div>
+    </div>
+    <div id="nav2">
+        <div id="img"><img src="./Logo2.png" alt="error"></div>
+        <div id="serachbar">
+          
+            <input id="inp" type="text" placeholder="Search">
+          <!-- <input type="text" placeholder="serach"> -->
+          <!-- <a href="./Addtobag.html"> -->
+    
+              <img id="im"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMS4wOCIgaGVpZ2h0PSIyNi4zNSIgdmlld0JveD0iMCAwIDIxLjA4IDI2LjM1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZDJhZDgxO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwLjMyNywyNi4zNUguNzUzQS44LjgsMCwwLDEsMCwyNS42VjcuMjc3YS44LjgsMCwwLDEsLjc1My0uNzUySDUuNFY1LjI3QTUuMzMsNS4zMywwLDAsMSw2LjkxNywxLjU1Myw0LjkzNCw0LjkzNCwwLDAsMSwxMC40MTUsMGguMTI1YTUuMjU4LDUuMjU4LDAsMCwxLDUuMDE5LDUuMjdWNi41MjVoNC43NjhhLjgxNS44MTUsMCwwLDEsLjc1Mi43NTJWMjUuNmEuOTU0Ljk1NCwwLDAsMS0uMjUxLjVsMCwwQS42NTEuNjUxLDAsMCwxLDIwLjMyNywyNi4zNVpNMTAuNTQsMS42MzFBMy4zMDksMy4zMDksMCwwLDAsNy40LDMuNjM5YTQuMyw0LjMsMCwwLDAtLjM3NywyLjEzM3YuNzUzaDcuMDI3VjUuNzcyYTQuOCw0LjgsMCwwLDAtLjM3Ni0yLjI1OCwzLjY1NywzLjY1NywwLDAsMC0zLjAxMS0xLjg4M1oiLz48L3N2Zz4=" alt="error">
+              
+              
+            <!-- </a> -->
+        </div>
+    </div>
+    <div class="nav3">
+        <a href="./product.html">WOMEN</a>
+        <a href="">SHOES</a>
+        <a href="">HANDBAG</a>
+        <a href="">JWELLERY & ACCESORIES</a>
+        <a href="./product.html">MEN</a>
+        <a href="">KIDS</a>
+        <a href="">HOME</a>
+        <a href="">SALE</a>
+        <a href="">DESIGNERS</a>
+        <a href="">EDITORIAL</a>
+        <a href="">GIFTS</a>
+    </div>
+    <h1>Your Brown Bag</h1>
+<div id="container">
+    <div id="box">
+
+    </div>
+    <!-- order -->
+    <!-- <div id="order">
+
+    </div> -->  
+<div id="dog">
+    <div id="quantity"> 
+        
+    </div>
+    <div>
+
+        <a href="./payment.html" id="anchor">PROCEED & CHECKOUT</a>
+    </div>
+</div>
+<!-- <div id="price">
+    </div> -->
+</div>
+    
+
+</body>
+<script>
+
+let lsdata= JSON.parse(localStorage.getItem("product"))||[]
+
+
+display(lsdata)
+    function display(data){
+    let box = document.getElementById("box")
+    let click= document.getElementById("click")
+    box.innerText=""
+    data.forEach((el,index)=>{
+        let div =document.createElement("div")
+        div.setAttribute("id","click")
+        let title = document.createElement("h4")
+        let image=document.createElement("img")
+        let price = document.createElement("p")
+        let button =document.createElement("button")
+        let Favorites=document.createElement("button")
+        title.innerText=el.title
+        image.src=el.image
+        price.innerText="₹" +el.price,
+        button.innerText="Delete"
+        button.addEventListener("click",(()=>{
+            lsdata=lsdata.filter((el,ind)=>{
+                return ind!==index
+            })
+            display(lsdata)
+            localStorage.setItem("product",JSON.stringify(lsdata))
+    
+        }))
+        // total price is here
+
+        let total=0
+        for(let i=0;i<data.length;i++)
+        {   
+            total+=data[i].price*data[i].quantity
+        }
+        let quantity = document.getElementById("quantity")
+        quantity.innerText="Total:-"+total
+        quantity.style.backgroundColor="black"
+        quantity.style.color="white"
+   
+    
+
+       
+        let indiv=document.createElement("div")
+        indiv.setAttribute("class","indiv")
+        indiv.append(image)
+
+    div.append(indiv,title,price,Favorites,button)
+    box.append(div)
+    })
+}
+
+</script>
+
+
+
+</html>
